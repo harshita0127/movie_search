@@ -16,7 +16,7 @@ function App() {
         return;
       }
       try {
-        const res = await axios.get(`http://www.omdbapi.com/?s=${query}&apikey=717508db`);
+        const res = await axios.get(`https://www.omdbapi.com/?s=${query}&apikey=717508db`);
         if (res.data.Response === 'True') {
           setSuggestions(res.data.Search);
         } else {
